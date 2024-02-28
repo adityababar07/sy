@@ -9,7 +9,7 @@ while True:
     if len(num_100) == 100:
         for i in num_100:
             sum += i
-        print(sum)
+        print(f"Sum of first 100 even no.s is {sum}.")
         exit()
 
     num += 1

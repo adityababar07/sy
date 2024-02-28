@@ -2,8 +2,8 @@
 
 num = int(input("enter the number who's factorial you want :\t"))
 
-sum = 1
+factorial = 1
 for i in range(1, num+1):
-    sum *= i
+    factorial *= i
 
-print(sum)
+print(f"Factorial of the ")
