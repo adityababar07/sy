@@ -1,4 +1,4 @@
-# factorial of first 100 no.s
+# factorial of  no.
 
 num = int(input("enter the number who's factorial you want :\t"))
 
