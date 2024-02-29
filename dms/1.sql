@@ -1,4 +1,4 @@
--- create database db;
+create database if NOT EXISTS db;
 
 create table IF NOT EXISTS student(
     id integer primary key AUTOINCREMENT,
