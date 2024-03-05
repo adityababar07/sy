@@ -1,4 +1,4 @@
-create database if NOT EXISTS db;
+-- create DATABASE if NOT EXISTS db;
 
 create table IF NOT EXISTS student(
     id integer primary key AUTOINCREMENT,
@@ -8,3 +8,9 @@ create table IF NOT EXISTS student(
 
 
 select * FROM  student;
+
+
+INSERT INTO student  VALUES ("aditya babar", 'sangli')
+
+
+

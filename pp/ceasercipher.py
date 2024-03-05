@@ -1,27 +1,25 @@
-import random as rd
-
-data = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
-
-# cipher = rd.shuffle(data)
-cipher = rd.sample(data)
+from encryption import encrypt
 
 
-print(cipher)
+while True:
 
-text = input("Enter your text:\t")
+    print('''What do you want to do ?
 
-output_text = ""
+                1)Encrypt 
+                2)Decrypt
 
-for i in text:
-    index = data.index(i)
-    print(cipher[index])
-    element = output_text + cipher[index]
+            press what you want to do!!!!!
+        ''')
 
-print(f"The encrypted text is:-\n {output_text}")
+    choice = int(input("enter what is your choice:\t")) 
 
-with open("cipher.txt", 'w+') as f:
-    f.write(cipher)
+    if choice == 1:
 
-
+        text = input("Enter your text:\t")
+        encrypt(text)
 
 
+    elif choice == 2:
+
+        text = input("enter your text :\t")
+        decrypt(text)
