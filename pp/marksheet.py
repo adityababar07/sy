@@ -8,7 +8,7 @@ for subject in subjects:
     mark = int(input(f"enter the marks obtained  in {subject}:\t"))
     marks.append(mark)
 
-percentage = sum(marks)/len(marks)
+percentage = (sum(marks)/500)*100
 
 print(f"Percentage of the student is {percentage}")
 
@@ -40,11 +40,11 @@ if grade == "F" or failed_sub>0:
 Output:-
 
 @adityababar07 ➜ /workspaces/sy-pp- (master) $ python pp/marksheet.py
-enter the marks obtained  in english:   75
-enter the marks obtained  in maths:     95
-enter the marks obtained  in science:   62
-enter the marks obtained  in social:    75
-enter the marks obtained  in hindi:     48
-Percentage of the student is 71.0
-The grade of the student is C.
+enter the marks obtained  in english:   48
+enter the marks obtained  in maths:     75
+enter the marks obtained  in science:   95
+enter the marks obtained  in social:    48
+enter the marks obtained  in hindi:     75
+Percentage of the student is 68.2
+The grade of the student is D.
 '''
