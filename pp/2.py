@@ -5,14 +5,14 @@ while True:
 
 Select a shape from the below options:
       1) circle
-      2) square
-      3) rectangle
+      2) rectangle
+      3) square
       4) triangle
 
 !!!!!!!Type exit to exit.
 ''')
 
-    choice = int(input("enter your choice:\t"))
+    choice = input("enter your choice:\t")
 
     if choice == 1:
         radius = int(input("enter the radius of the circle:\t"))
@@ -29,8 +29,8 @@ Select a shape from the below options:
     elif choice == 3:
         length = int(input("enter the length of the square:\t"))
 
-        print(f"Area of rectangle is {math.sqrt(length)}")
-        print(f"perimeter of the rectangle is {4*length}")      
+        print(f"Area of square is {math.sqrt(length)}")
+        print(f"perimeter of the square is {4*length}")      
 
     elif choice == 4:
         height = int(input("enter the height of the triangle:\t"))
