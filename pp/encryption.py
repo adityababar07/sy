@@ -17,7 +17,7 @@ def encrypt(text):
     
     for i in text:
         index = data.index(i)
-        print(cipher[index])
+        # print(cipher[index])
         output_text+= cipher[index]
     
         # element = output_text + cipher[index]
