@@ -6,4 +6,4 @@ factorial = 1
 for i in range(1, num+1):
     factorial *= i
 
-print(f"Factorial of the ")
+print(f"Factorial of the number is {factorial} ")

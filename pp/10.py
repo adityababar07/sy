@@ -1,11 +1,8 @@
 # find out prime no. from first 100 no.s
 
-num = 0
-
 prime_no = [2, 3, 5, 7]
 
-for i in range(2,101):
-    num=i
+for num in range(2,101):
     if num%2!=0 and num%3!=0 and num%5!=0 and num%7!=0:
         prime_no.append(num)
 
