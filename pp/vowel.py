@@ -29,7 +29,7 @@ print(f"\n\nThe no. of vowels is {no_of_vowels}, \nthe no. of whitespace is {no_
 '''
 Output :-
 ┌─[aditya@aditya-hplaptop15da0xxx]─[~/Code/sy]
-└──╼ $/bin/python /home/aditya/Code/sy/pp/vowel.py
+└──╼ $python pp/vowel.py
 enter the text: Encryption is an integral part of our daily lives – whether you are sending messages to friends on WhatsApp, visiting a website and your browser is making sure it's legitimate, or entering your bank details when buying something online. Encryption protects your data from potentially malicious and prying eyes.
 
 
@@ -42,5 +42,3 @@ the no. of comma is 10.
 └──╼ $
 '''
         
-
-

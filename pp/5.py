@@ -17,3 +17,10 @@ while True:
     if num % 2 == 0:
         num_50.append(num) 
 
+'''
+┌─[aditya@aditya-hplaptop15da0xxx]─[~/Code/sy]
+└──╼ $python pp/5.py
+Sum of first 50 even no.s is 2550.
+┌─[aditya@aditya-hplaptop15da0xxx]─[~/Code/sy]
+└──╼ $
+'''

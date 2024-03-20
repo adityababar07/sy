@@ -16,3 +16,13 @@ while True:
 
     if num % 2 != 0:
         num_50.append(num) 
+
+'''
+Output:-
+
+┌─[aditya@aditya-hplaptop15da0xxx]─[~/Code/sy]
+└──╼ $python pp/6.py
+Sum of first 50 odd no.s is 2500.
+┌─[aditya@aditya-hplaptop15da0xxx]─[~/Code/sy]
+└──╼ $
+'''
