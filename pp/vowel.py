@@ -1,6 +1,7 @@
 # finding no. of vowels
 
 text = input("enter the text:\t")
+text = text.lower()
 
 vowels = ['a', 'u', 'e', 'i', 'o']
 
@@ -9,12 +10,21 @@ no_of_whitespaces =0
 no_of_fullstopes =0
 no_of_semicolan =0
 no_of_comma =0
+no_of_a = 0
+no_of_e = 0
+no_of_i = 0
+no_of_o = 0
+no_of_u = 0
+
 
 
 for i in vowels:
     for letter in text:
         if letter == i:
             no_of_vowels+=1
+            if letter == 'a':
+                no_of_a += 1
+            
         elif letter == " ":
             no_of_whitespaces+=1
         elif letter == ".":
