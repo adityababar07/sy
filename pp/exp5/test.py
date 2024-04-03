@@ -7,12 +7,13 @@ matrix3 = [[0,0],[0,0]]
 
 for i in range(2):
     element = 0
-    for j in range(2):
-        k = 0
-        element+=matrix1[i][j]*matrix2[j][i]
-        print(element)
-        if j == 1:
-            matrix3[i][k] = element
-            k +=1
+    for _ in range(2): 
+        for j in range(2):
+            k = 0
+            element+=matrix1[i][j]*matrix2[j][i]
+            print(element)
+            if j == 1:
+                matrix3[i][k] = element
+                k +=1
 
 print(matrix3)
