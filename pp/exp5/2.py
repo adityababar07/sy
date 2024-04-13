@@ -42,14 +42,11 @@ print(f"The transpose of matrix1 :\n\n {np.matrix(matrix4)}")
 
 # Multiplication
 
-element = 0
-
-for i in range(2):
-    for j in range(2):
-        element+=matrix1[i][j]*matrix2[j][i]
-        print(element)
-    for k in range(2):
-        matrix3[i][k] = element
+matrix3 = [[0,0],[0,0]]
+for i in range(len(matrix1)):
+    for k in range(len(matrix2[0])):
+        for j in range(len(matrix2)):
+            matrix3[i][j]+=matrix1[i][k]*matrix2[k][j]
         
 
 print(f"Multiplication of matrices : {matrix3}")
@@ -57,7 +54,7 @@ print(f"Multiplication of matrices : {matrix3}")
 
 # Numpy
 
-print(f"Addition of two matrices matrix1 and matrix2 is :\n\n{np.add(matrix1, matrix2)}")
+print(f"\nAddition of two matrices matrix1 and matrix2 is :\n\n{np.add(matrix1, matrix2)}")
 
 print(f"Substraction of two matrices matrix1 and matrix2 is :\n\n{np.subtract(matrix1, matrix2)}")
 

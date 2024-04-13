@@ -5,14 +5,9 @@ matrix2 = [[5, 6],[7, 8]]
 matrix3 = [[0,0],[0,0]]
 
 
-for i in range(2):
-    element = 0
-    for j in range(2):
-        k = 0
-        element+=matrix1[i][j]*matrix2[j][i]
-        print(element)
-        if j == 1:
-            matrix3[i][k] = element
-            k +=1
+for i in range(len(matrix1)):
+    for k in range(len(matrix2[0])):
+        for j in range(len(matrix2)):
+            matrix3[i][j]+=matrix1[i][k]*matrix2[k][j]
 
 print(matrix3)
