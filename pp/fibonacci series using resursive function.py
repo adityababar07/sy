@@ -7,5 +7,5 @@ def fibonacci(n):
         return fibonacci(n-1) + fibonacci(n-2)
 
 n = int(input("Enter the number of terms you want in Fibonacci series:\t"))
-series = [fibonacci(i) for i in range(n)]
+series = [fibonacci(i) for i in range(n+1)]
 print(series)

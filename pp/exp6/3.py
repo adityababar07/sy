@@ -27,26 +27,24 @@ if choice == "y":
     details.append(detail)
     details= tuple(details)
 
-# changes from here 
+# total cost = no. of shares of each stock*price of share
+total_cost_of_portfolio = 0
+total_amount_gained = 0
 
-    # total cost = no. of shares of each stock*price of share
-    total_cost_of_portfolio = 0
-    total_amount_gained = 0
+for detail in details:
+    detail = list(detail)
+    total_cost_of_portfolio += detail[2]*detail[3]
+    total_amount_gained += detail[4]-detail[2]
 
-    for detail in details:
-        detail = list(detail)
-        total_cost_of_portfolio += detail[2]*detail[3]
-        total_amount_gained += detail[4]-detail[2]
+percentage_of_profit = (total_amount_gained/len(details))/100
 
-    percentage_of_profit = (total_amount_gained/len(details))/100
+print(f"The total cost of portfolio is:\t {total_cost_of_portfolio}")
 
-    print(f"The total cost of portfolio is:\t {total_cost_of_portfolio}")
-
-    if total_amount_gained > 0:
-        print(f"The total amount gained is:\t {total_amount_gained}\n The total amount lost is :\t {0}")
-        print(f"Percentage of profit :\t {percentage_of_profit} %")
-        print(f"Percentage of loss :\t {0} %")
-    else:
-        print(f"The total amount gained is:\t {0}\n The total amount lost is :\t {abs(total_amount_gained)}")
-        print(f"Percentage of profit :\t {0} %")
-        print(f"Percentage of loss :\t {abs(percentage_of_profit)} %")
+if total_amount_gained > 0:
+    print(f"The total amount gained is:\t {total_amount_gained}\n The total amount lost is :\t {0}")
+    print(f"Percentage of profit :\t {percentage_of_profit} %")
+    print(f"Percentage of loss :\t {0} %")
+else:
+    print(f"The total amount gained is:\t {0}\n The total amount lost is :\t {abs(total_amount_gained)}")
+    print(f"Percentage of profit :\t {0} %")
+    print(f"Percentage of loss :\t {abs(percentage_of_profit)} %")
