@@ -1,91 +1,57 @@
-# string concatination
+# String concatenation
 
 str1 = "hello"
 str2 = "world!!!"
-
-str3 = str1 +" "+ str2
-
+str3 = str1 + " " + str2
 print(str3)
 
-# string appending
-
-str1+= str2
+# String appending
+str1 += str2
 print(str1)
 
+# String indexing
+print(f"Index of 'l' is {str1.index('l')}")
 
-#string indexing
-
-print(f"index of l is {str1.index('l')}")
-
-
-
+# Slicing a string
 str = "Hello, how are you?"
+print(str[::2], str[:4], str[3:8], str[5:], str[5:9:3])
 
+# String methods
+# Upper, lower, and title case
+print(f"The string in upper case: {str.upper()}")
+print(f"The string in lower case: {str.lower()}")
+print(f"The string in title case: {str.title()}")
 
-# slicing a string
+# Endswith and Startswith
+print(f"The string ends with 'x': {str.endswith('x')}")
+print(f"The string starts with 'H': {str.startswith('H')}")
 
-print(str[::2] ,str[:4], str[3:8], str[5:], str[5:9:3])
+# Find and Count
+print(f"Index of 'how' in string: {str.find('how')}")
+print(f"Count of 'how' in string: {str.count('how')}")
 
-
-# string methods
-
-# upper , lower and title case
-
-print(f"the string in upper case:- {str.upper()}\n")
-
-print(f"the string in lower case:- {str.lower()}\n")
-
-print(f"the string in title case:- {str.title()}\n")
-
-print(f"the string in ends with:- {str.endswith('x')}\n")
-
-print(f"the string in starts with:- {str.startswith('H')}\n")
-
-print(f"finding how  in string:- {str.find('how')}\n")
-
-print(f"finding count of how  in string:- {str.count('how')}\n")
-
-# split a string
-
+# Split a string
 print(str.split())
 
-
-print(f"finding whether string is alphanumeric:- {str.isalnum()}\n")
-
-print(f"finding whether string is alphabetic:- {str.isalpha()}\n")
-
+# isalnum and isalpha
+print(f"The string is alphanumeric: {str.isalnum()}")
+print(f"The string is alphabetic: {str.isalpha()}")
 
 '''
 Output:-
 
-┌─[✗]─[aditya@aditya-hplaptop15da0xxx]─[~/Code/sy]
-└──╼ $python pp/exp4/3.py
 hello world!!!
 helloworld!!!
-index of l is 2
+Index of 'l' is 2
 Hlo o r o? Hell lo, h , how are you? ,o
-the string in upper case:- HELLO, HOW ARE YOU?
-
-the string in lower case:- hello, how are you?
-
-the string in title case:- Hello, How Are You?
-
-the string in ends with:- False
-
-the string in starts with:- True
-
-finding how  in string:- 7
-
-finding count of how  in string:- 1
-
+The string in upper case: HELLO, HOW ARE YOU?
+The string in lower case: hello, how are you?
+The string in title case: Hello, How Are You?
+The string ends with 'x': False
+The string starts with 'H': True
+Index of 'how' in string: 7
+Count of 'how' in string: 1
 ['Hello,', 'how', 'are', 'you?']
-finding whether string is alphanumeric:- False
-
-finding whether string is alphabetic:- False
-
-┌─[aditya@aditya-hplaptop15da0xxx]─[~/Code/sy]
-└──╼ $
-
+The string is alphanumeric: False
+The string is alphabetic: False
 '''
-
-

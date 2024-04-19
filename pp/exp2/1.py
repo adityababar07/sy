@@ -1,13 +1,28 @@
-num1 = int(input("enter first number:\t"))
-num2 = int(input("enter second number:\t"))
+num1 = int(input("Enter first number:\t"))
+num2 = int(input("Enter second number:\t"))
 
-print(f"Sum of the entered numbers is {num1+num2}.")
-print(f"Difference of the entered numbers is {num1-num2}.")
-print(f"Product of the entered numbers is {num1*num2}.")
-print(f"Quotient of the entered numbers is {num1/num2}.")
-print(f"Remainder of the entered numbers is {num1%num2}.")
-print(f"Fractional part of division of the entered numbers is {num1//num2}.")
-print(f"{num2} raised to {num1} is {num1**num2}.")
+# Perform arithmetic operations on the entered numbers
+
+# Sum
+print(f"Sum of the entered numbers is {num1 + num2}.")
+
+# Difference
+print(f"Difference of the entered numbers is {num1 - num2}.")
+
+# Product
+print(f"Product of the entered numbers is {num1 * num2}.")
+
+# Quotient
+print(f"Quotient of the entered numbers is {num1 / num2}.")
+
+# Remainder
+print(f"Remainder of the entered numbers is {num1 % num2}.")
+
+# Fractional part of division
+print(f"Fractional part of division of the entered numbers is {num1 // num2}.")
+
+# Exponentiation
+print(f"{num2} raised to {num1} is {num1 ** num2}.")
 
 
 '''

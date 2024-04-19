@@ -1,54 +1,43 @@
-
 list1 = [1, 2, 3, 'apple', 'banana', 'orange']
-
 list2 = ['jackfruit', 'cherry']
 
-# concatenation
-
+# Concatenation: Combining two lists
 list3 = list1 + list2
-print(f"After concatenation {list3}")
+print(f"After concatenation: {list3}")
 
-# indexing
+# Indexing: Finding the index of a specific element
+print(f"\nIndex of 'jackfruit' is {list3.index('jackfruit')}")
 
-print(f"\nindex of jackfruit is {list3.index('jackfruit')}")
-
-#accessing
-
+# Accessing: Retrieving an element by index
 print(f"\nThe element at index 3 in list3 is {list3[3]}")
 
-#pop()
+# Pop: Removing and returning an element by index
+print(f"\nUsing the pop function on index 1, result is: {list3.pop(1)}")
 
-print(f"\nusing the pop function on index 1 , result is :- {list3.pop(1)}")
+# Insert: Adding an element at a specific index
+list3.insert(3, "mango")
+print(f"List3 after inserting 'mango':\t {list3}")
 
-#insert()
-
-list3.insert(3,"mango")
-print(f"list3 after inserting 'mango' :\t {list3}")
-
-# remove()
-
+# Remove: Removing a specific element
 list3.remove("mango")
-print(f"list3 after removing 'mango' :\t {list3}")
+print(f"List3 after removing 'mango':\t {list3}")
 
-# reverse()
-
+# Reverse: Reversing the order of elements in the list
 list3.reverse()
-print(f"list3 after reversing :\t {list3}")
+print(f"List3 after reversing:\t {list3}")
 
-# append()
-
+# Append: Adding an element to the end of the list
 list3.append("mango")
-print(f"list3 after appending 'mango' :\t {list3}")
+print(f"List3 after appending 'mango':\t {list3}")
 
-# sort()
-
+# Sort: Sorting the elements in ascending order
 list3.sort()
-print(f"list3 after sorting in ascending order :\t {list3}")
+print(f"List3 after sorting in ascending order:\t {list3}")
 
+# Sort (descending order): Sorting the elements in descending order
 list3.sort(reverse=True)
-print(f"list3 after sorting in descending order :\t {list3}")
+print(f"List3 after sorting in descending order:\t {list3}")
 
-# merge()
-
-list1.merge(list2)
-print(f"list1 after merging with list2 :\t {list1}")
+# Merge: Merging list2 into list1 (Note: This operation doesn't exist in Python)
+# list1.merge(list2)
+# print(f"List1 after merging with list2:\t {list1}")

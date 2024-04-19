@@ -1,12 +1,9 @@
-str = input("enter string:\t")
+# Reverse a string
 
-str2 = ""
-l = len(str)
-# print(str[-1:-(l+1)])
-for i in range(l-1,-1,-1):
-# for i in range(l-1,-1):
+str = input("Enter a string:\t")
 
-    # str2+=str[-i:-(i-1)]
-    print(str[i],end="")
-    
-# print(str2)
+# Iterate through the string in reverse order and print each character
+for i in range(len(str) - 1, -1, -1):
+    print(str[i], end="")
+
+

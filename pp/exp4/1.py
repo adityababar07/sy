@@ -1,26 +1,25 @@
-# finding the distance between two characters in a string
+# Calculate the distance between corresponding characters of two strings
 
-str1 = input("enter a string:\t")
-str2 = input("enter a string:\t")
+str1 = input("Enter a string:\t")
+str2 = input("Enter a string:\t")
 count = 0
 
+# Check if the lengths of the strings are equal
 if len(str1) != len(str2):
     print("-1")
     exit()
 
+# Calculate the distance between corresponding characters
 for i in range(len(str1)):
-    count += abs(ord(str1[i])-ord(str2[i]))
+    count += abs(ord(str1[i]) - ord(str2[i]))
 
-print(f"the distance between the characters of the string is {count}.")
+# Print the distance
+print(f"The distance between the characters of the strings is {count}.")
 
 '''
 Output:-
 
-┌─[aditya@aditya-hplaptop15da0xxx]─[~/Code/sy]
-└──╼ $/bin/python /home/aditya/Code/sy/pp/exp4/1.py
-enter a string: cat
-enter a string: dog
-the distance between the characters of the string is 28.
-┌─[aditya@aditya-hplaptop15da0xxx]─[~/Code/sy]
-└──╼ $
+Enter a string: cat
+Enter a string: dog
+The distance between the characters of the strings is 28.
 '''
