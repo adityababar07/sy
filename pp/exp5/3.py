@@ -9,8 +9,10 @@ for i in range(20):
 a.sort()
 print(a)
 
-for i in a:
-    if i > 20 and i < 50:
-        a.remove(i)
-
+def removenum():
+    for i in a:
+        if i>20 and i<50:
+                a.remove(i)
+                
+    
 print(a)

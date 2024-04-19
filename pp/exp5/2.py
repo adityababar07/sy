@@ -63,5 +63,34 @@ print(f"Multiplication of two matrices matrix1 and matrix2 is :\n\n{np.dot(matri
 print(f"Transpose of  matrix1  is :\n\n{np.transpose(matrix1)}")
 
 
+'''
+Output:-
 
+@adityababar07 ➜ /workspaces/sy-pp- (master) $ python pp/exp5/2.py
+addition of matrices : [[6, 8], [10, 12]]
+Substraction of matrices : [[-4, -4], [-4, -4]]
+The transpose of matrix1 :
+
+ [[1 3]
+ [2 4]]
+Multiplication of matrices : [[19, 22], [43, 50]]
+
+Addition of two matrices matrix1 and matrix2 is :
+
+[[ 6  8]
+ [10 12]]
+Substraction of two matrices matrix1 and matrix2 is :
+
+[[-4 -4]
+ [-4 -4]]
+Multiplication of two matrices matrix1 and matrix2 is :
+
+[[19 22]
+ [43 50]]
+Transpose of  matrix1  is :
+
+[[1 3]
+ [2 4]]
+@adityababar07 ➜ /workspaces/sy-pp- (master) $ 
+'''
 
