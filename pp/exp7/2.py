@@ -1,9 +1,10 @@
-# creating a dictionary of students and inputing data of 5 students from user
-
+# Creating an empty dictionary to store student data
 students = {}
 
+# Looping 5 times to input data for 5 students
 for i in range(5):
     print('\n')
+    # Inputting data for each student
     roll_no = input("enter the roll number of the student:\t")
     name = input("enter the name of the student:\t")
     course = input("enter the course enrolled by the student:\t")
@@ -14,6 +15,7 @@ for i in range(5):
     hindi = input("enter the marks obtained in hindi:\t")
     social = input("enter the marks obtained in social:\t")
 
+    # Creating a nested dictionary for each student and storing their data
     students[roll_no] = {}
     students[roll_no]["name"] = name
     students[roll_no]["course"] = course
@@ -24,10 +26,9 @@ for i in range(5):
     students[roll_no]["hindi"] = hindi
     students[roll_no]["social"] = social
 
-
-# printing the students dictionary
-
+# Printing the dictionary containing the data of all students
 print('\n',students)
+
 
 '''
 Output:-
