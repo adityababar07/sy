@@ -3,9 +3,6 @@ from random import randint as rd
 
 a = []
 
-<<<<<<< HEAD
-a.append(randint)
-=======
 # Generate a list of 20 random integers between 10 and 100
 for i in range(20):
     num = rd(-999, 999)
@@ -60,4 +57,3 @@ list of odd numbers is [401, 3].
 
 @adityababar07 ➜ /workspaces/sy-pp- (master) $ 
 '''
->>>>>>> b836be55164d509915994772293c27e4a9ace8da
