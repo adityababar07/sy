@@ -50,3 +50,22 @@ else:
     print(f"The total amount gained is:\t {0}\n The total amount lost is :\t {abs(total_amount_gained)}")
     print(f"Percentage of profit :\t {0} %")
     print(f"Percentage of loss :\t {abs(percentage_of_profit)} %")
+
+'''
+Output:-
+
+@adityababar07 ➜ /workspaces/sy-pp- (master) $ python3 pp/exp6/3.py
+Do you want to enter portfolio details (y/n):   y
+All the fields should be entered otherwise portfolio details won't be entered!!!!!
+Enter name of share:    tata steel
+Have you bought this share today (y/n): y
+Enter cost of share:    790
+Enter no. of shares purchased:  67
+Enter selling price:    799
+The total cost of portfolio is:  55330
+The total amount gained is:      359
+ The total amount lost is :      0
+Percentage of profit :   0.8975 %
+Percentage of loss :     0 %
+@adityababar07 ➜ /workspaces/sy-pp- (master) $ 
+'''
