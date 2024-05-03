@@ -21,3 +21,15 @@ for i in mixed_tuple:
             mixed_tuple = tuple(ls)
 
 print(f"Mixed tuple after removing empty tuple: {mixed_tuple}")
+
+'''
+output:-
+
+@adityababar07 ➜ /workspaces/sy-pp- (master) $ python3 pp/exp6/1.py
+Accessing the 5th element in tuple using index 4: 5
+After slicing the tuple, the result is: (4, 5, 6, 7)
+
+Mixed tuple: (2, 'hello', 3.67, 'g', (), (1, 4, 5, 7))
+Mixed tuple after removing empty tuple: (2, 'hello', 3.67, 'g', (1, 4, 5, 7))
+@adityababar07 ➜ /workspaces/sy-pp- (master) $ 
+'''
