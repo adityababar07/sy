@@ -186,6 +186,9 @@ Atlas atlas-ciuwlf-shard-0 [primary] db> db.students.deleteMany({class:"sy"})
 { acknowledged: true, deletedCount: 2 }
 Atlas atlas-ciuwlf-shard-0 [primary] db> db.students.find()
 
+Atlas atlas-ciuwlf-shard-0 [primary] db> db.dropDatabase("students")
+
+{ ok: 1, dropped: 'db' }
 Atlas atlas-ciuwlf-shard-0 [primary] db> quit
 @adityababar07 ➜ /workspaces/sy-pp- (master) $ 
 
