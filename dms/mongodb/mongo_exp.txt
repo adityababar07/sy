@@ -1,0 +1,191 @@
+@adityababar07 ➜ /workspaces/sy-pp- (master) $ mongosh mongodb+srv://hackerboy:4III5PFZplMo4Ehe@cluster0.otmk1pv.mongodb.net/
+Current Mongosh Log ID: 663c81c73d834f4765dbf0fb
+Connecting to:          mongodb+srv://<credentials>@cluster0.otmk1pv.mongodb.net/?appName=mongosh+2.0.0
+Using MongoDB:          7.0.8
+Using Mongosh:          2.0.0
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+Atlas atlas-ciuwlf-shard-0 [primary] test> use db
+switched to db db
+Atlas atlas-ciuwlf-shard-0 [primary] db> db.createCollection("students")
+{ ok: 1 }
+Atlas atlas-ciuwlf-shard-0 [primary] db> db.students.insertOne({id:1, name:"aditya", class:"sy", marks:89})
+{
+  acknowledged: true,
+  insertedId: ObjectId("663c825e3d834f4765dbf0fc")
+}
+Atlas atlas-ciuwlf-shard-0 [primary] db> db.students.find()
+[
+  {
+    _id: ObjectId("663c825e3d834f4765dbf0fc"),
+    id: 1,
+    name: 'aditya',
+    class: 'sy',
+    marks: 89
+  }
+]
+Atlas atlas-ciuwlf-shard-0 [primary] db> db.students.insertMany([{id:2, name:"unmesh", class:"ty", marks:90}, {id:3, name:"atul", class:"sy", marks:89}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("663c831f3d834f4765dbf0fd"),
+    '1': ObjectId("663c831f3d834f4765dbf0fe")
+  }
+}
+Atlas atlas-ciuwlf-shard-0 [primary] db> db.students.find()
+[
+  {
+    _id: ObjectId("663c825e3d834f4765dbf0fc"),
+    id: 1,
+    name: 'aditya',
+    class: 'sy',
+    marks: 89
+  },
+  {
+    _id: ObjectId("663c831f3d834f4765dbf0fd"),
+    id: 2,
+    name: 'unmesh',
+    class: 'ty',
+    marks: 90
+  },
+  {
+    _id: ObjectId("663c831f3d834f4765dbf0fe"),
+    id: 3,
+    name: 'atul',
+    class: 'sy',
+    marks: 89
+  }
+]
+Atlas atlas-ciuwlf-shard-0 [primary] db> db.students.findOne({name:"aditya"})
+{
+  _id: ObjectId("663c825e3d834f4765dbf0fc"),
+  id: 1,
+  name: 'aditya',
+  class: 'sy',
+  marks: 89
+}
+Atlas atlas-ciuwlf-shard-0 [primary] db> db.students.find({class:"sy"})
+[
+  {
+    _id: ObjectId("663c825e3d834f4765dbf0fc"),
+    id: 1,
+    name: 'aditya',
+    class: 'sy',
+    marks: 89
+  },
+  {
+    _id: ObjectId("663c831f3d834f4765dbf0fe"),
+    id: 3,
+    name: 'atul',
+    class: 'sy',
+    marks: 89
+  }
+]
+Atlas atlas-ciuwlf-shard-0 [primary] db> db.students.findOne({class:"sy"})
+{
+  _id: ObjectId("663c825e3d834f4765dbf0fc"),
+  id: 1,
+  name: 'aditya',
+  class: 'sy',
+  marks: 89
+}
+Atlas atlas-ciuwlf-shard-0 [primary] db> db.students.updateOne({name:"unmesh"}, {$set:{class:"sy"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-ciuwlf-shard-0 [primary] db> db.students.updateMany({class:"sy"}, {$set:{degree:"B.Tech"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 3,
+  modifiedCount: 3,
+  upsertedCount: 0
+}
+Atlas atlas-ciuwlf-shard-0 [primary] db> db.students.find()
+[
+  {
+    _id: ObjectId("663c825e3d834f4765dbf0fc"),
+    id: 1,
+    name: 'aditya',
+    class: 'sy',
+    marks: 89,
+    degree: 'B.Tech'
+  },
+  {
+    _id: ObjectId("663c831f3d834f4765dbf0fd"),
+    id: 2,
+    name: 'unmesh',
+    class: 'sy',
+    marks: 90,
+    degree: 'B.Tech'
+  },
+  {
+    _id: ObjectId("663c831f3d834f4765dbf0fe"),
+    id: 3,
+    name: 'atul',
+    class: 'sy',
+    marks: 89,
+    degree: 'B.Tech'
+  }
+]
+Atlas atlas-ciuwlf-shard-0 [primary] db> db.students.replaceOne({name:"aditya"}, {name:"aditya babar"})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+Atlas atlas-ciuwlf-shard-0 [primary] db> db.students.find()
+[
+  { _id: ObjectId("663c825e3d834f4765dbf0fc"), name: 'aditya babar' },
+  {
+    _id: ObjectId("663c831f3d834f4765dbf0fd"),
+    id: 2,
+    name: 'unmesh',
+    class: 'sy',
+    marks: 90,
+    degree: 'B.Tech'
+  },
+  {
+    _id: ObjectId("663c831f3d834f4765dbf0fe"),
+    id: 3,
+    name: 'atul',
+    class: 'sy',
+    marks: 89,
+    degree: 'B.Tech'
+  }
+]
+Atlas atlas-ciuwlf-shard-0 [primary] db> db.students.deleteOne({name:"aditya babar"})
+{ acknowledged: true, deletedCount: 1 }
+Atlas atlas-ciuwlf-shard-0 [primary] db> db.students.find()
+[
+  {
+    _id: ObjectId("663c831f3d834f4765dbf0fd"),
+    id: 2,
+    name: 'unmesh',
+    class: 'sy',
+    marks: 90,
+    degree: 'B.Tech'
+  },
+  {
+    _id: ObjectId("663c831f3d834f4765dbf0fe"),
+    id: 3,
+    name: 'atul',
+    class: 'sy',
+    marks: 89,
+    degree: 'B.Tech'
+  }
+]
+Atlas atlas-ciuwlf-shard-0 [primary] db> db.students.deleteMany({class:"sy"})
+{ acknowledged: true, deletedCount: 2 }
+Atlas atlas-ciuwlf-shard-0 [primary] db> db.students.find()
+
+Atlas atlas-ciuwlf-shard-0 [primary] db> quit
+@adityababar07 ➜ /workspaces/sy-pp- (master) $ 
+

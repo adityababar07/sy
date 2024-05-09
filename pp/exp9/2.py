@@ -49,6 +49,25 @@ while number != "q":
 '''
 Output:-
 
+@adityababar07 ➜ /workspaces/sy-pp-/pp/exp9 (master) $ tree
+.
+├── 1_main.py
+├── 2.py
+├── calculator
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── add.cpython-311.pyc
+│   │   ├── division.cpython-311.pyc
+│   │   ├── multiply.cpython-311.pyc
+│   │   └── substract.cpython-311.pyc
+│   ├── add.py
+│   ├── division.py
+│   ├── multiply.py
+│   └── substract.py
+└── module_1.py
+
+2 directories, 12 files
+
 (sy) ┌─[aditya@aditya-hplaptop15da0xxx]─[~/Code/sy]
 └──╼ $python pp/exp9/2.py
     ____             _                    __           __      __            
