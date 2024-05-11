@@ -8,6 +8,7 @@ with open("file2.txt", "w") as file:
 with open("file2.txt", "r") as file:
     output = list(file.read())
     output.reverse()
+    output = "".join(output)
     print(output)
 
 
@@ -16,7 +17,7 @@ output:-
 
 (sy) ┌─[aditya@aditya-hplaptop15da0xxx]─[~/Code/sy/pp/exp10]
 └──╼ $python 2.py
-['z', 'y', 'x', 'w', 'v', 'u', 't', 's', 'r', 'q', 'p', 'o', 'n', 'm', 'l', 'k', 'j', 'i', 'h', 'g', 'f', 'e', 'd', 'c', 'b', 'a']
+zyxwvutsrqponmlkjihgfedcba
 (sy) ┌─[aditya@aditya-hplaptop15da0xxx]─[~/Code/sy/pp/exp10]
 └──╼ $
 '''
